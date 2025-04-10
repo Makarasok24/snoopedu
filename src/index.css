@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+body {
+    font-family: 'primary', sans-serif;
+}
+
+/* =============================================================
+  Global font classes are used to change the font of the text.
+================================================================*/
+@font-face {
+    font-family: "primary";
+    src: url("./assets/fonts/SARABUN-REGULAR.TTF") format("truetype");
+    /* src: url("/fonts/helveticanowtext-bold-demo.ttf") format("truetype"); */
+}
