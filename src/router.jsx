@@ -3,6 +3,7 @@ import Layout from "./Layouts/Layout";
 import HomePage from "./pages/HomePage";
 import CoursePage from "./pages/course/CoursePage";
 import StudentDashboard from "./pages/studentDashboard/StudentDashboard";
+import StudentLayout from "./Layouts/StudentLayout";
 
 const router = createBrowserRouter([
     {
@@ -16,9 +17,15 @@ const router = createBrowserRouter([
             {
                 path: "/course",
                 element: <CoursePage />
-            },
+            }
+        ]
+    },
+    {
+        path: "/student/*",
+        element: <StudentLayout />,
+        children: [
             {
-                path: "/student-dashboard",
+                path: "dashboard",
                 element: <StudentDashboard />
             }
         ]
