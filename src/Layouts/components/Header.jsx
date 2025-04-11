@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`w-full h-[72px] px-4 sticky top-0 ${scrolled ? "bg-[#fffaee] z-99 shadow-xs" : "bg-transparent z-100"}`}>
+    <header className={`w-full h-[72px] px-4 sticky top-0 ${scrolled ? "bg-secondary z-99 shadow-xs" : "bg-transparent z-100"}`}>
       <div className="flex justify-between px-[2px] md:py-[21px] lg:px-[40px] xl:px-[10rem] max-w-screen-2xl mx-auto h-full items-center">
         <div className="w-[48px] md:w-[96px]">
           <img src="https://snoopedu.com/app/themes/snoopedu/resources/assets/images/logo.svg" alt="snoopedu logo" />
@@ -33,7 +33,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="hidden md:flex">
-          <button className="py-2 px-3 md:py-2 md:px-4 font-semibold text-lg md:text-[16px]  text-white hover:text-black cursor-pointer bg-[#30Ba96] rounded-lg">
+          <button className="py-2 px-3 md:py-2 md:px-4 font-semibold text-lg md:text-[16px]  text-white hover:text-black cursor-pointer bg-primary rounded-lg">
             Login to Snoopedu
           </button>
         </div>
